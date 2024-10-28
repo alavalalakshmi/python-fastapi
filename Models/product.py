@@ -1,0 +1,7 @@
+from fastapi import FastAPI,Body,Response
+from pydantic import BaseModel
+
+class Product(BaseModel):
+    id: int
+    name: str
+    price:float
